@@ -18,6 +18,30 @@ module.exports = {
           fallback: "style-loader",
           use: "css-loader"
         })
+      },
+      {
+        test: /\.(ttf|eot|woff2?)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            name: "[name].[ext]",
+            limit: 16000
+          }
+        }
+      },
+      {
+        test: /\.(png|gif|jpe?g)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            name: "[name].[ext]",
+            limit: 16000
+          }
+        }
+      },
+      {
+        test: /\.html$/,
+        use: "html-loader"
       }
     ]
   },
