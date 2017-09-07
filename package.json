@@ -1,0 +1,10 @@
+{
+  "name": "talk-webpack",
+  "version": "1.0.0",
+  "description": "Dogeify",
+  "author": "Geovani de Souza <geovanisouza92@gmail.com>",
+  "main": "src/index.js",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
